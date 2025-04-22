@@ -6,11 +6,12 @@ import foodRouter from "./routes/food.route.js";
 import userRouter from "./routes/user.routes.js";
 import cartRouter from "./routes/cart.route.js";
 import orderRouter from "./routes/order.route.js";
+
 dotenv.config();
 
 // app config
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 4000;
 
 // middlewares
 app.use(express.json());
