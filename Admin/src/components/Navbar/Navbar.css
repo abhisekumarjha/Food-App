@@ -1,0 +1,60 @@
+.navbar {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 4%;
+}
+
+.navbar .logo {
+    width: max(10%, 100px);
+}
+
+.userInfo .profile-img {
+    width: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 3px #00000090;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.userInfo:hover .profile-img {
+    scale: 0;
+    opacity: 0;
+}
+
+.userInfo:hover .userInfo-contents {
+    scale: 1;
+}
+
+.userInfo {
+    position: relative;
+}
+
+.userInfo-contents {
+    width: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    scale: 0;
+    cursor: pointer;
+    box-shadow: 0 0 3px #00000090;
+    padding: 5px;
+    border-radius: 7px;
+    transition: 0.5s;
+    transform-origin: left;
+}
+
+.userInfo-contents b {
+    color: #ff6347;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.userInfo-contents p {
+    font-style: italic;
+    font-size: 12px;
+    color: #000000a0;
+}
